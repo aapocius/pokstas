@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+   background:rgba(20, 20, 20, 0.699)
+}
+
+h3 {
+  text-align: center;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 10px;
+  
+
+}
+p{
+   
+   margin-top: 20px;
+   font-size: 9px;
+margin-left: 20px;   
+color: rgba(255, 255, 255, 0.582);
+
+   
+}
+
+
+button {
+  height: 50px;
+  width: 120px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  color: rgb(238, 234, 234);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 0.01px;
+  font-size: 13px;
+
+  font-weight: bold;
+
+  box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.5);
+  
+}
+
+
+button:nth-of-type(1) {
+   cursor: pointer;
+   user-select: none;
+  background: rgb(55, 111, 233);
+  box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.5);
+  transform: translate(-10%, -10%);
+  transition: 0.5s;
+  border: 0.3px solid white;
+}
+button:nth-of-type(1):active {
+ 
+  box-shadow: -5px -5px 6px 1px rgba(0, 0, 0, 0.5);
+  transform: translate(0);
+}
+
+button:hover {
+   color: grey;
+}
+
+
+.buttons {
+  display: grid;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #8d8741 20%,
+    #fbeec1 29%,
+    #daad86 67%,
+    #659dbd 80%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  margin-bottom: 30px;
+  font-size: 40px;
+  
+}
+.hhh {
+   display: flex;
+   justify-content: center;
+   margin-top: 200px;
+  text-align: center;
+}
+
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+
+@media (min-width: 680px) {
+
+   .buttons{
+      margin-left: 20px;
+   }
+}
